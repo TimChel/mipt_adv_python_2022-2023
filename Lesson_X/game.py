@@ -13,11 +13,11 @@ WHITE = (255, 255, 255)
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
-        # self.image = pygame.Surface((100, 80))
-        # self.image.fill(BLACK)
+        self.image = pygame.Surface((100, 80))
+        self.image.fill(BLACK)
 
-        self.image = pygame.image.load("p1_jump.png")
-        self.image.set_colorkey(WHITE)
+        # self.image = pygame.image.load("p1_jump.png")
+        # self.image.set_colorkey(WHITE)
 
         self.rect = self.image.get_rect()
         self.rect.center = (WIDTH / 2, HEIGHT / 2)
@@ -75,3 +75,4 @@ while running:
     pygame.display.flip()
 
 pygame.quit()
+

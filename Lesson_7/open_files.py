@@ -1,8 +1,7 @@
-with open("Test.txt", mode="r+") as f:
-    print(f)
+with open("Test.txt", mode="w+") as f:
+    f.write('something string63356')
     f.seek(0)
-    f.write("cccc")
-    # print(f.tell())
+    f.write('new string')
     # print(f.readline())
     # print(f.tell())
     # print(f.readline())
